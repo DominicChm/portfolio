@@ -3,7 +3,7 @@
 
 	export let currentPage
 	export let totalPosts
-	export let path = '/blog/page'
+	export let path = '/projects/page'
 	
 	let pagesAvailable
 	$: pagesAvailable = Math.ceil(totalPosts / postsPerPage)

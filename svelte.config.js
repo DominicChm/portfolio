@@ -2,6 +2,7 @@ import adapter from '@sveltejs/adapter-static'
 import { mdsvex } from 'mdsvex'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,6 +10,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 
 	preprocess: [
+		vitePreprocess(),
 		mdsvex({
 			// The default mdsvex extension is .svx; this overrides that.
 			extensions: ['.md'],
@@ -27,12 +29,12 @@ const config = {
       entries: [
         '*',
         '/api/posts/page/*',
-        '/blog/category/*/page/',
-        '/blog/category/*/page/*',
-        '/blog/category/page/',
-        '/blog/category/page/*',
-        '/blog/page/',
-        '/blog/page/*',
+        '/projects/category/*/page/',
+        '/projects/category/*/page/*',
+        '/projects/category/page/',
+        '/projects/category/page/*',
+        '/projects/page/',
+        '/projects/page/*',
       ]
     }
 	}
