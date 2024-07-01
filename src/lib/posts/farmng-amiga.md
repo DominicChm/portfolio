@@ -6,8 +6,6 @@ categories:
   - "sveltekit"
   - "markdown"
 coverImage: "/images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg"
-coverWidth: 16
-coverHeight: 9
 excerpt: Check out how heading links work with this starter in this post.
 ---
 
@@ -33,3 +31,4 @@ Lorem ipsum dolor sit amet
 
 Lorem ipsum dolor sit amet
 
+<marquee class="bg-red-500">test</marquee>

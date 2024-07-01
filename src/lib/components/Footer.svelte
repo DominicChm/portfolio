@@ -2,16 +2,8 @@
 	import { siteAuthor } from '$lib/config';
 </script>
 
-<footer>
-	<nav>
-		<ul>
-			<li>
-				<a href="/">Home</a>
-			</li>
-		</ul>
-	</nav>
-	<nav>
-	</nav>
+<footer class="bg-base-100 z-50 flex justify-between">
+	<a href="/">Home</a>
 
 	<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
 </footer>

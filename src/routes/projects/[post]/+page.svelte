@@ -1,8 +1,9 @@
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
+	import { GithubLogo } from 'phosphor-svelte';
 	export let data;
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
+	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories, github } =
 		data.meta;
 	const { PostContent } = data;
 </script>
@@ -20,43 +21,36 @@
 	<meta property="og:image:height" content={coverHeight} />
 </svelte:head>
 
-<article class="post">
+<article class="post prose w-full max-w-none">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<img
-		class="cover-image"
-		src={coverImage}
-		alt=""
-		style="aspect-ratio: {coverWidth} / {coverHeight};"
-		width={coverWidth}
-		height={coverHeight}
-	/>
-
-	<h1>{title}</h1>
-
-	<div class="meta">
-		<b>Published:</b>
-		{date}
-		<br />
-		<b>Updated:</b>
-		{updated}
-	</div>
-
-	<div class="prose">
-		<svelte:component this={PostContent} />
-	</div>
+	<img class="cover-image w-full rounded-t-xl" src={coverImage} alt="" />
 
 	{#if categories}
-		<aside class="post-footer">
-			<h2>Posted in:</h2>
-			<ul class="post-footer__categories">
-				{#each categories as category}
-					<li>
-						<a href="/projects/category/{category}/">
-							{category}
-						</a>
-					</li>
-				{/each}
-			</ul>
-		</aside>
+		<div class="mb-4 flex gap-2 items-center">
+			{#each categories as category}
+				<a class="badge badge-lg" href="/projects/category/{category}/">
+					{category}
+				</a>
+			{/each}
+
+			<div class="flex-1 flex justify-end">
+				{#if github}
+					<a class="btn btn-primary" href={github}>
+						Source <GithubLogo size={24}></GithubLogo>
+					</a>
+				{/if}
+			</div>
+		</div>
 	{/if}
+
+	<h1 class="mb-1">
+		{title}
+	</h1>
+	<p class="mt-0">
+		{date}
+	</p>
+
+	<div class="prose max-w-full w-full relative">
+		<svelte:component this={PostContent} />
+	</div>
 </article>

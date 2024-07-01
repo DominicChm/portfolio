@@ -38,9 +38,14 @@
 	The below markup is used on every page in the site. The <slot> is where the page's
 	actual contents will show up.
 -->
+
+<svelte:head>
+	<link src="/prism.css" />
+</svelte:head>
+
 <Header />
 {#key data.path}
-	<main tabindex="-1" in:fade|global={transitionIn} out:fade|global={transitionOut} class="max-w-[96rem] m-auto flex-1">
+	<main tabindex="-1" in:fade|global={transitionIn} out:fade|global={transitionOut} class="w-full max-w-5xl m-auto flex-1 p-8">
 		<slot />
 	</main>
 {/key}

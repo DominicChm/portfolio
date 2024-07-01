@@ -7,7 +7,10 @@ const config = {
 		fs: {
 			allow: ['.']
 		}
-	}
+	},
+	optimizeDeps: {
+		exclude: ["phosphor-svelte"],
+	},
 };
 
 export default config

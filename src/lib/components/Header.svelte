@@ -8,7 +8,7 @@
 	};
 </script>
 
-<div class="navbar fixed bg-base-100">
+<div class="navbar fixed bg-base-100 z-50">
 	<div class="navbar-start">
 		<a class="btn btn-ghost text-xl" href="/">{siteTitle}</a>
 		<ul class="hidden menu menu-horizontal px-1 lg:flex">
@@ -18,4 +18,4 @@
 		</ul>
 	</div>
 </div>
-<div class="min-h-[80px] w-5/6"></div>
+<div class="min-h-[72px] w-5/6"></div>

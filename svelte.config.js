@@ -3,6 +3,7 @@ import { mdsvex } from 'mdsvex'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { phosphorSvelteOptimize } from "phosphor-svelte/preprocessor"
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -10,6 +11,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 
 	preprocess: [
+		phosphorSvelteOptimize(),
 		vitePreprocess(),
 		mdsvex({
 			// The default mdsvex extension is .svx; this overrides that.
@@ -24,19 +26,25 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter(),
-    prerender: {
-      entries: [
-        '*',
-        '/api/posts/page/*',
-        '/projects/category/*/page/',
-        '/projects/category/*/page/*',
-        '/projects/category/page/',
-        '/projects/category/page/*',
-        '/projects/page/',
-        '/projects/page/*',
-      ]
-    }
+		adapter: adapter({
+			// default options are shown. On some platforms
+			// these options are set automatically — see below
+			pages: 'build',
+			assets: 'build',
+			fallback: undefined,
+			precompress: false,
+			strict: false
+		}),
+		// prerender: {
+		// 	entries: [
+		// 		'*',
+		// 		// '/projects/category/*/page/*',
+		// 		// '/projects/category/page/',
+		// 		// '/projects/category/page/*',
+		// 		// '/projects/page/',
+		// 		// '/projects/page/*',
+		// 	]
+		// }
 	}
 };
 
