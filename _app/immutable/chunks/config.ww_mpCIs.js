@@ -1,1 +1,0 @@
-import{b as t}from"./paths.OJDb_LzB.js";const s="Dominic C.",e="My Portfolio",i="Dominic C.",a=10,r=[{title:"Projects",route:`${t}/projects`},{title:"About",route:`${t}/about`}];export{i as a,e as b,r as n,a as p,s};
