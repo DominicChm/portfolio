@@ -34,5 +34,5 @@ Check out our first run!
 
 By the end of our run, our entire collection bin had filled up!
 
-<img class="m-auto w-[50%]" src="/portfolio/assets/paac-robot/take.png/" />
+<img class="m-auto w-[50%]" src="/portfolio/assets/paac-robot/take.png" />
 
