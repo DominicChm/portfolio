@@ -11,6 +11,7 @@ const config = {
 	optimizeDeps: {
 		exclude: ["phosphor-svelte"],
 	},
+	base: "portfolio"
 };
 
 export default config

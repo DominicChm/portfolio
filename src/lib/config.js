@@ -7,7 +7,7 @@
 
 export const siteTitle = 'Dominic C.'
 export const siteDescription = 'My Portfolio'
-export const siteURL = 'dominicchm.github.io/portfolio/'
+export const siteURL = 'https://dominicchm.github.io/portfolio/'
 export const siteLink = 'https://dominicchm.github.io/portfolio/'
 export const siteAuthor = 'Dominic C.'
 
