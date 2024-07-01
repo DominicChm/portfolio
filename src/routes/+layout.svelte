@@ -45,7 +45,7 @@
 
 <Header />
 {#key data.path}
-	<main tabindex="-1" in:fade|global={transitionIn} out:fade|global={transitionOut} class="w-full max-w-5xl m-auto flex-1 p-8">
+	<main in:fade|global={transitionIn} out:fade|global={transitionOut} class="w-full max-w-5xl m-auto flex-1 p-8 ">
 		<slot />
 	</main>
 {/key}
