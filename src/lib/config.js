@@ -4,6 +4,7 @@
  * 
  * PLEASE BE SURE TO UPDATE THEM ALL! Thank you!
  **/
+import { base } from "$app/paths"
 
 export const siteTitle = 'Dominic C.'
 export const siteDescription = 'My Portfolio'
@@ -18,12 +19,12 @@ export const postsPerPage = 10
 export const navItems = [
 	{
 		title: 'Projects',
-		route: '/projects'
-	}, 
+		route: `${base}/projects`
+	},
 	{
 		title: 'About',
-		route: '/about'
-	}, 
+		route: `${base}/about`
+	},
 	// {
 	// 	title: 'Contact',
 	// 	route: '/contact'

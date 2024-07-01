@@ -1,6 +1,6 @@
 <script>
 	import { siteTitle } from '$lib/config';
-
+  import {base} from "$app/paths"
 	export let data;
 </script>
 
@@ -19,8 +19,8 @@
 				jack-of-all-trades with a passion for all. Feel free to browse around my projects!
 			</p>
 			<div class="card-actions justify-end">
-				<a class="btn btn-secondary" href="/projects/category">All Categories</a>
-				<a class="btn btn-primary" href="/projects">All Projects</a>
+				<a class="btn btn-secondary" href="{base}/projects/category">All Categories</a>
+				<a class="btn btn-primary" href="{base}/projects">All Projects</a>
 			</div>
 		</div>
 	</div>

@@ -17,5 +17,3 @@ Anyway, you can find this file here:
 ```
 src/routes/about/+page.md
 ```
-
-Here's the [home link](/) if you wanna go back.

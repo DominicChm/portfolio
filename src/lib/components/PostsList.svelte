@@ -1,13 +1,15 @@
 <script>
+	  import {base} from "$app/paths"
+
 	export let posts = [];
 </script>
 
 <div class="grid grid-cols-3 gap-10">
 	{#each posts as post}
-		<a class="hover-container" href="/projects/{post.slug}">
+		<a class="hover-container" href="{base}/projects/{post.slug}">
 			<div class="card bg-base-100 shadow-xl">
 				<figure>
-					<img src={post.coverImage} alt="Shoes" />
+					<img src="{base}{post.coverImage}" alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">{post.title}</h2>

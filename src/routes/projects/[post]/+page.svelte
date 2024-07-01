@@ -2,8 +2,9 @@
 <script>
 	import { GithubLogo } from 'phosphor-svelte';
 	export let data;
+	import {base} from "$app/paths"
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories, github } =
+	const { title, excerpt, date, coverImage, categories, github } =
 		data.meta;
 	const { PostContent } = data;
 </script>
@@ -17,18 +18,16 @@
 	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={excerpt} />
 	<meta name="twitter:description" content={excerpt} />
-	<meta property="og:image:width" content={coverWidth} />
-	<meta property="og:image:height" content={coverHeight} />
 </svelte:head>
 
 <article class="post prose w-full max-w-none">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<img class="cover-image w-full rounded-t-xl" src={coverImage} alt="" />
+	<img class="cover-image w-full rounded-t-xl" src="{base}{coverImage}" alt="" />
 
 	{#if categories}
 		<div class="mb-4 flex gap-2 items-center">
 			{#each categories as category}
-				<a class="badge badge-lg" href="/projects/category/{category}/">
+				<a class="badge badge-lg" href="{base}/projects/category/{category}/">
 					{category}
 				</a>
 			{/each}

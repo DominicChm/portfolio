@@ -26,6 +26,9 @@ const config = {
 	],
 
 	kit: {
+		paths: {
+			base: "/portfolio"
+		},
 		adapter: adapter({
 			// default options are shown. On some platforms
 			// these options are set automatically — see below

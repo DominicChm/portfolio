@@ -1,5 +1,6 @@
+import { base } from "$app/paths"
 export const load = async ({ url, fetch }) => {
-	const res = await fetch(`${url.origin}/api/posts.json`)
+	const res = await fetch(`${url.origin}${base}/api/posts.json`)
 	let posts = await res.json()
 
 	let uniqueCategories = {}
@@ -17,11 +18,11 @@ export const load = async ({ url, fetch }) => {
 		})
 	})
 
-	const sortedUniqueCategories = 
+	const sortedUniqueCategories =
 		Object.values(uniqueCategories)
 			.sort((a, b) => a.title > b.title)
 
-	return { 
+	return {
 		uniqueCategories: sortedUniqueCategories
 	}
 }

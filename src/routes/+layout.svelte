@@ -40,7 +40,7 @@
 -->
 
 <svelte:head>
-	<link src="/prism.css" />
+	<link src="/portfolio/prism.css" />
 </svelte:head>
 
 <Header />
