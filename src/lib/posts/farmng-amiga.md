@@ -1,34 +1,10 @@
 ---
-title: "Automatic heading links in mdsvex"
-date: "2023-10-26"
-updated: "2023-10-26"
+title: "Autonomous Robot Guidance"
+date: "2024-4-1"
 categories:
-  - "sveltekit"
-  - "markdown"
-coverImage: "/images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg"
-excerpt: Check out how heading links work with this starter in this post.
+  - "ros2"
+  - "python"
+  - "robotics"
+coverImage: "/images/farmng-amiga/hero.jpg"
+excerpt: Autonomous robot platform guidance for strawberry fields
 ---
-
-Here are some headings:
-
-## Here's an h2
-
-Lorem ipsum dolor sit amet
-
-### This is an h3
-
-Lorem ipsum dolor sit amet
-
-#### As you've probably guessed, this is an h4
-
-Lorem ipsum dolor sit amet
-
-##### This, of course, is an h5
-
-Lorem ipsum dolor sit amet
-
-###### We're deep in h6 territory now
-
-Lorem ipsum dolor sit amet
-
-<marquee class="bg-red-500">test</marquee>

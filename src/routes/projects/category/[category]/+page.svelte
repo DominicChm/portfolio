@@ -17,13 +17,18 @@
 	<title>Category: {category}</title>
 </svelte:head>
 
-<h1>Blog category: {category}</h1>
-
+<div class="prose">
+	<h1 class="capitalize mb-8">{category} Projects</h1>
+</div>
 {#if posts.length}
 	<PostsList {posts} />
-	<Pagination currentPage={page} totalPosts={total} path="{base}/projects/category/{category}/page" />
+	<Pagination
+		currentPage={page}
+		totalPosts={total}
+		path="{base}/projects/category/{category}/page"
+	/>
 {:else}
-	<p><strong>Ope!</strong> Sorry, couldn't find any posts in the category "{category}".</p>
+	<p><strong></strong> Sorry, couldn't find any posts in the category "{category}".</p>
 
-	<p><a href="{base}/projects">Back to blog</a></p>
+	<p><a href="{base}/projects">Back to projects</a></p>
 {/if}

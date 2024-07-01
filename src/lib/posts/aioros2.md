@@ -1,6 +1,6 @@
 ---
 title: "aioros2"
-date: "20204-6-30"
+date: "2024-6-30"
 github: https://github.com/California-Strawberry-Commission/laser-runner-cutter/tree/main/ros2/aioros2
 categories:
   - "python"

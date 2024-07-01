@@ -1,12 +1,11 @@
 ---
-title: "Scipy Studentized Range"
-date: "2021-04-28"
-github: https://github.com/scipy/scipy/pull/13732
+title: "Turret"
+date: "2023-12-28"
 categories:
+  - "cad"
   - "python"
-  - "cython"
 coverImage: "/images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
 excerpt: Addition of optimized distribution to Scipy 
 ---
 
-Studentized range
+turret

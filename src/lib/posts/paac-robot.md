@@ -1,14 +1,14 @@
 ---
-title: "Data Acquisition Library"
-date: "2024-06-01"
-github: https://github.com/DominicChm/daq-2023
+title: "ASABE Robotics Robot"
+date: "2023-06-01"
 categories:
-  - "csc"
-  - "c++"
+  - "paac"
+  - "python"
+  - "robotics"
   - "software"
   - "arduino"
 coverImage: "/images/linus-nylund-Q5QspluNZmM-unsplash.jpg"
-excerpt: A simple, high performance DAQ solution for Arduino
+excerpt: Cotton-picking robot for the ASABE robotics competition
 ---
 
 This project is a carrythrough from my earliest days on Baja to the present day. This library is designed to run on an ESP32 and make gathering lots of data at relatively high rates (~200hz) easy on the programmer (like all good Arduino libraries). It's still very much under active development.

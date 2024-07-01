@@ -1,6 +1,6 @@
 <script>
-	  import {base} from "$app/paths"
-
+	import { base } from '$app/paths';
+	import Tags from './Tags.svelte';
 	export let posts = [];
 </script>
 
@@ -12,6 +12,10 @@
 					<img src="{base}{post.coverImage}" alt="Shoes" />
 				</figure>
 				<div class="card-body">
+					<div class="flex gap-2 w-full flex-wrap">
+						<Tags tags={post.categories} />
+					</div>
+
 					<h2 class="card-title">{post.title}</h2>
 					<p>{post.excerpt}</p>
 				</div>
@@ -23,27 +27,19 @@
 <style>
 	.hover-container {
 		position: relative;
-		height: 30rem;
 	}
-	
-	.card {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
 
+
+	.card {
 		transition-property: color top left right bottom box-shadow;
 		transition-duration: 100ms;
+		height: 100%;
 	}
-	
+
 	.card:hover {
+		transform: translate(.5rem, -.5rem);
 		background-color: oklch(var(--p));
 		color: oklch(var(--pc));
-		top: -.5rem;
-		right: -.5rem;
-		bottom: .5rem;
-		left: .5rem;
 		z-index: 100;
 		box-shadow: -1rem 1rem oklch(var(--nc));
 	}

@@ -3,6 +3,7 @@
 	import { GithubLogo } from 'phosphor-svelte';
 	export let data;
 	import {base} from "$app/paths"
+	import Tags from '$lib/components/Tags.svelte';
 
 	const { title, excerpt, date, coverImage, categories, github } =
 		data.meta;
@@ -26,11 +27,7 @@
 
 	{#if categories}
 		<div class="mb-4 flex gap-2 items-center">
-			{#each categories as category}
-				<a class="badge badge-lg" href="{base}/projects/category/{category}/">
-					{category}
-				</a>
-			{/each}
+			<Tags tags={categories}/>
 
 			<div class="flex-1 flex justify-end">
 				{#if github}
