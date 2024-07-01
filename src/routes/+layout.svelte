@@ -1,7 +1,7 @@
 <!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script>
-	import "tailwindcss/tailwind.css";
-	import "../app.css"
+	import 'tailwindcss/tailwind.css';
+	import '../app.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { currentPage, isMenuOpen } from '../lib/assets/js/store.js';
@@ -41,11 +41,19 @@
 
 <svelte:head>
 	<link src="/portfolio/prism.css" />
+	<script
+		type="module"
+		src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+	></script>
 </svelte:head>
 
 <Header />
 {#key data.path}
-	<main in:fade|global={transitionIn} out:fade|global={transitionOut} class="w-full max-w-5xl m-auto flex-1 p-8 ">
+	<main
+		in:fade|global={transitionIn}
+		out:fade|global={transitionOut}
+		class="w-full max-w-5xl m-auto flex-1 p-8"
+	>
 		<slot />
 	</main>
 {/key}

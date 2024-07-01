@@ -1,5 +1,5 @@
 ---
-title: "ASABE Robotics Robot"
+title: "ASABE Robotics Competition"
 date: "2023-06-01"
 categories:
   - "paac"
@@ -7,10 +7,32 @@ categories:
   - "robotics"
   - "software"
   - "arduino"
-coverImage: "/images/linus-nylund-Q5QspluNZmM-unsplash.jpg"
+coverImage: "/assets/paac-robot/hero.png"
 excerpt: Cotton-picking robot for the ASABE robotics competition
 ---
 
-This project is a carrythrough from my earliest days on Baja to the present day. This library is designed to run on an ESP32 and make gathering lots of data at relatively high rates (~200hz) easy on the programmer (like all good Arduino libraries). It's still very much under active development.
+I mentored Cal Poly's Precision Agriculture Automation Club (PAAC) to develop a robot for the 2023 [ASABE Robotics Competition](https://asabe.org/Robotics). The robot, affectionately named "Ankle Biter", got Cal Poly 2nd place. 
 
-For this project, I developed a fully custom file format to log timeseries data with **zero** overhead (outside of a header, of course). This results in very small file sizes, especially compared with CSV or JSON, which allows the ESP32 to handle data writing to SD even with its limited resources. It also allows huge datasets to be loaded into a browser webpage for viewing without going over the browser's ~2GB/page RAM limit. 
+It used a 360 degree LIDAR, coupled with a custom python-based driver, to navigate the playing field with closed-loop control. Cotton picking was performed using spined belts together with a vacuum fan salvaged from a Neato XV-11. 
+
+Here's the collection mechanism:
+
+<model-viewer
+  alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+  src="/portfolio/assets/paac-robot/asm.gltf"
+  environment-image="/portfolio/assets/environment.hdr"
+  shadow-intensity="1"
+  camera-controls
+  touch-action="pan-y"
+  orientation="0deg -90deg 0deg"
+  class="w-full h-[30rem]"
+/>
+
+Check out our first run!
+<video class="m-auto w-[50%]" src="/portfolio/assets/paac-robot/run.mp4" controls></video>
+
+
+By the end of our run, our entire collection bin had filled up!
+
+<img class="m-auto w-[50%]" src="/portfolio/assets/paac-robot/take.png/" />
+

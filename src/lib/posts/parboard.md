@@ -7,7 +7,7 @@ categories:
   - "kicad"
   - "EE"
   - "embedded"
-coverImage: "/images/parboard/hero.png"
+coverImage: "/assets/parboard/hero.png"
 excerpt: Mini robotics board
 ---
 
@@ -15,8 +15,8 @@ An ESP32-S2 based micro robotics board. Designed to drive 4 encoded 2A DC motors
 
 
 <div class="flex overflow-hidden w-full">
-<img class="min-w-0" alt="PCB front" src="/portfolio/images/parboard/front.png" />
-<img class="min-w-0" alt="PCB back" src="/portfolio/images/parboard/back.png" />
+<img class="min-w-0" alt="PCB front" src="/portfolio/assets/parboard/front.png" />
+<img class="min-w-0" alt="PCB back" src="/portfolio/assets/parboard/back.png" />
 </div>
 
-<img class="min-w-0" alt="Schematic" src="/portfolio/images/parboard/schematic.png" />
+<img class="min-w-0" alt="Schematic" src="/portfolio/assets/parboard/schematic.png" />

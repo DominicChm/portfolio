@@ -7,7 +7,7 @@ categories:
   - "c++"
   - "software"
   - "arduino"
-coverImage: "/images/linus-nylund-Q5QspluNZmM-unsplash.jpg"
+coverImage: "/assets/linus-nylund-Q5QspluNZmM-unsplash.jpg"
 excerpt: A simple, high performance DAQ solution for Arduino
 ---
 

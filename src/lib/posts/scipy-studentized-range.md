@@ -5,7 +5,7 @@ github: https://github.com/scipy/scipy/pull/13732
 categories:
   - "python"
   - "cython"
-coverImage: "/images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
+coverImage: "/assets/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
 excerpt: Addition of optimized distribution to Scipy 
 ---
 
