@@ -5,6 +5,7 @@ categories:
   - "ros2"
   - "python"
   - "robotics"
-coverImage: "/assets/farmng-amiga/hero.jpg"
+  - "highlight"
+cover: "/portfolio/assets/farmng-amiga/hero.jpg"
 excerpt: Autonomous robot platform guidance for strawberry fields
 ---

@@ -8,7 +8,7 @@
 
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Projects</title>
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 

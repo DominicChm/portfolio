@@ -6,7 +6,7 @@ categories:
   - "arduino"
   - "kicad"
   - "EE"
-coverImage: "/assets/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
+cover: "/portfolio/assets/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
 excerpt: A PCB designed to integrate RKT.
 ---
 

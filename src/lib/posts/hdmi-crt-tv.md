@@ -5,7 +5,7 @@ categories:
   - "modding"
   - "EE"
   - "fun"
-coverImage: "/assets/hdmi-crt-tv/hero.png"
+cover: "/portfolio/assets/hdmi-crt-tv/hero.png"
 excerpt: Adding HDMI input to a vintage B&W TV
 ---
 

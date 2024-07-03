@@ -2,11 +2,11 @@
 <script>
 	import { GithubLogo } from 'phosphor-svelte';
 	export let data;
-	import {base} from "$app/paths"
+	import { base } from '$app/paths';
 	import Tags from '$lib/components/Tags.svelte';
+	import Cover from '$lib/components/Cover.svelte';
 
-	const { title, excerpt, date, coverImage, categories, github } =
-		data.meta;
+	const { title, excerpt, date, coverImage, categories, github } = data.meta;
 	const { PostContent } = data;
 </script>
 
@@ -23,11 +23,13 @@
 
 <article class="post prose w-full max-w-none">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<img class="cover-image w-full rounded-t-xl" src="{base}{coverImage}" alt="" />
+	<div class="w-full h-[40vh] mb-8 rounded-t-xl overflow-hidden">
+		<Cover post={data.meta}></Cover>
+	</div>
 
 	{#if categories}
 		<div class="mb-4 flex gap-2 items-center">
-			<Tags tags={categories}/>
+			<Tags tags={categories} />
 
 			<div class="flex-1 flex justify-end">
 				{#if github}

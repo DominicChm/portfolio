@@ -1,7 +1,6 @@
 <!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script>
 	import 'tailwindcss/tailwind.css';
-	import '../app.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { currentPage, isMenuOpen } from '../lib/assets/js/store.js';
@@ -41,6 +40,8 @@
 
 <svelte:head>
 	<link src="/portfolio/prism.css" />
+	<link src="/portfolio/app.css" />
+
 	<script
 		type="module"
 		src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
@@ -58,3 +59,17 @@
 	</main>
 {/key}
 <Footer />
+
+<style>
+	:global(body) {
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: oklch(var(--b2)) !important;
+	}
+
+	:global(html) {
+		height: 100%;
+		min-height: 100%;
+	}
+</style>

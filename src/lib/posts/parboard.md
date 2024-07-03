@@ -7,7 +7,9 @@ categories:
   - "kicad"
   - "EE"
   - "embedded"
-coverImage: "/assets/parboard/hero.png"
+cover: "/portfolio/assets/parboard/parboard.gltf"
+coverPoster: "/portfolio/assets/parboard/hero.png"
+coverOrientation: "45deg -45deg 0deg"
 excerpt: Mini robotics board
 ---
 

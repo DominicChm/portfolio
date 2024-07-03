@@ -7,8 +7,10 @@ categories:
   - "robotics"
   - "software"
   - "arduino"
-coverImage: "/assets/paac-robot/hero.png"
+  - "highlight"
+cover: "/portfolio/assets/paac-robot/hero.png"
 excerpt: Cotton-picking robot for the ASABE robotics competition
+
 ---
 
 I mentored Cal Poly's Precision Agriculture Automation Club (PAAC) to develop a robot for the 2023 [ASABE Robotics Competition](https://asabe.org/Robotics). The robot, affectionately named "Ankle Biter", got Cal Poly 2nd place. 
@@ -18,7 +20,6 @@ It used a 360 degree LIDAR, coupled with a custom python-based driver, to naviga
 Here's the collection mechanism:
 
 <model-viewer
-  alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
   src="/portfolio/assets/paac-robot/asm.gltf"
   environment-image="/portfolio/assets/environment.hdr"
   shadow-intensity="1"
@@ -31,6 +32,7 @@ Here's the collection mechanism:
 Check out our first run!
 <video class="m-auto w-[50%]" src="/portfolio/assets/paac-robot/run.mp4" controls></video>
 
+Far from perfect, but considering the robot was rebuilt from the ground up in the preceding 2 weeks it way outperformed expectations.
 
 By the end of our run, our entire collection bin had filled up!
 

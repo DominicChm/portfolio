@@ -6,7 +6,7 @@ categories:
   - "python"
   - "ros2"
   - "software"
-coverImage: "/assets/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
+cover: "/portfolio/assets/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
 excerpt: A Pythonic way to interact with ROS2
 ---
 

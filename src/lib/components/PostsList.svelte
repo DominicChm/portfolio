@@ -1,16 +1,15 @@
 <script>
 	import { base } from '$app/paths';
 	import Tags from './Tags.svelte';
+	import Cover from './Cover.svelte';
 	export let posts = [];
 </script>
 
-<div class="grid grid-cols-3 gap-10">
+<div class="grid lg:grid-cols-3 gap-10">
 	{#each posts as post}
 		<a class="hover-container" href="{base}/projects/{post.slug}">
-			<div class="card bg-base-100 shadow-xl">
-				<figure>
-					<img src="{base}{post.coverImage}" alt="Shoes" />
-				</figure>
+			<div class="card bg-base-100 shadow-xl overflow-hidden" class:important={post.categories.includes("highlight")}>
+				<Cover {post}></Cover>
 				<div class="card-body">
 					<div class="flex gap-2 w-full flex-wrap">
 						<Tags tags={post.categories} />
@@ -42,5 +41,9 @@
 		color: oklch(var(--pc));
 		z-index: 100;
 		box-shadow: -1rem 1rem oklch(var(--nc));
+	}
+
+	.important {
+		border: 3px solid oklch(var(--a));
 	}
 </style>
