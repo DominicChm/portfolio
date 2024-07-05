@@ -1,7 +1,7 @@
 <script>
 	export let post;
 
-	let src = post.cover;
+	let src = post.cover || "";
 	let orientation = post.coverOrientation || '0deg -90deg -45deg';
 
 	function exposure(node, val) {
