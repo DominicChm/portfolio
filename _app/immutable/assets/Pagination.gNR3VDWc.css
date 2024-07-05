@@ -1,1 +1,0 @@
-.hover-container.svelte-be35zq{position:relative}.card.svelte-be35zq{transition-property:color top left right bottom box-shadow;transition-duration:.1s;height:100%}.card.svelte-be35zq:hover{transform:translate(.5rem,-.5rem);background-color:oklch(var(--p));color:oklch(var(--pc));z-index:100;box-shadow:-1rem 1rem oklch(var(--nc))}
