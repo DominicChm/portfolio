@@ -12,6 +12,8 @@
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
+<a class="link text-right w-full block mb-2" href="/portfolio/projects/category">All Categories</a>
+
 <PostsList posts={data.posts} />
 
 <Pagination currentPage={1} totalPosts={data.total} />

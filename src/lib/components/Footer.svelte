@@ -3,7 +3,7 @@
 	import {base} from "$app/paths"
 </script>
 
-<footer class="bg-base-100 z-50 flex justify-between">
+<footer class="bg-base-100 z-50 flex justify-between p-2">
 	<a href="{base}/">Home</a>
 
 	<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>

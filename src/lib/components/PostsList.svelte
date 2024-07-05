@@ -8,7 +8,10 @@
 <div class="grid lg:grid-cols-3 gap-10">
 	{#each posts as post}
 		<a class="hover-container" href="{base}/projects/{post.slug}">
-			<div class="card bg-base-100 shadow-xl overflow-hidden" class:important={post.categories.includes("highlight")}>
+			<div
+				class="card bg-base-100 shadow-xl overflow-hidden min-h-96"
+				class:important={post.categories.includes('highlight')}
+			>
 				<Cover {post}></Cover>
 				<div class="card-body">
 					<div class="flex gap-2 w-full flex-wrap">
@@ -28,7 +31,6 @@
 		position: relative;
 	}
 
-
 	.card {
 		transition-property: color top left right bottom box-shadow;
 		transition-duration: 100ms;
@@ -36,7 +38,7 @@
 	}
 
 	.card:hover {
-		transform: translate(.5rem, -.5rem);
+		transform: translate(0.5rem, -0.5rem);
 		background-color: oklch(var(--p));
 		color: oklch(var(--pc));
 		z-index: 100;

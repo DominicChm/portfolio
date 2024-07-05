@@ -9,6 +9,7 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { siteTitle, siteURL } from '$lib/config.js';
+	import { themeChange } from 'theme-change';
 	export let data;
 
 	const transitionIn = { delay: 150, duration: 150 };
@@ -30,6 +31,7 @@
 	onMount(() => {
 		const navRoutes = navItems.map((item) => item.route);
 		preloadCode(...navRoutes);
+		themeChange(false);
 	});
 </script>
 
@@ -39,9 +41,6 @@
 -->
 
 <svelte:head>
-	<link src="/portfolio/prism.css" />
-	<link src="/portfolio/app.css" />
-
 	<script
 		type="module"
 		src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"

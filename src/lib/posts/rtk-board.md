@@ -7,7 +7,7 @@ categories:
   - "kicad"
   - "EE"
 cover: "/portfolio/assets/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
-excerpt: A PCB designed to integrate RKT.
+excerpt: A PCB designed to integrate the ZED-F9P RTK chip.
 ---
 
 
