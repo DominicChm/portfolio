@@ -48,4 +48,19 @@
 	.important {
 		border: 3px solid oklch(var(--a));
 	}
+
+	a {
+		text-decoration: none;
+	}
+
+	h2,
+	p {
+		color: inherit;
+		font-weight: normal;
+		margin: 0;
+	}
+
+	h2 {
+		font-weight: bold;
+	}
 </style>

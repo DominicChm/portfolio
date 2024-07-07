@@ -52,7 +52,7 @@
 	<main
 		in:fade|global={transitionIn}
 		out:fade|global={transitionOut}
-		class="w-full max-w-5xl m-auto flex-1 p-8"
+		class="w-full max-w-5xl m-auto flex-1 p-8 prose"
 	>
 		<slot />
 	</main>
