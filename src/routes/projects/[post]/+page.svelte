@@ -1,12 +1,12 @@
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
-	import { GithubLogo } from 'phosphor-svelte';
+	import { GithubLogo, Link } from 'phosphor-svelte';
 	export let data;
 	import { base } from '$app/paths';
 	import Tags from '$lib/components/Tags.svelte';
 	import Cover from '$lib/components/Cover.svelte';
 
-	const { title, excerpt, date, coverImage, categories, github } = data.meta;
+	const { title, excerpt, date, coverImage, categories, github, link } = data.meta;
 	const { PostContent } = data;
 </script>
 
@@ -37,6 +37,11 @@
 						Source <GithubLogo size={24}></GithubLogo>
 					</a>
 				{/if}
+				{#if link}
+				<a class="btn btn-primary" href={link}>
+					<Link size={24}></Link>
+				</a>
+			{/if}
 			</div>
 		</div>
 	{/if}

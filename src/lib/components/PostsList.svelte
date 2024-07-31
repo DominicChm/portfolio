@@ -10,15 +10,15 @@
 		<a class="hover-container" href="{base}/projects/{post.slug}">
 			<div
 				class="card bg-base-100 shadow-xl overflow-hidden min-h-96"
-				class:important={post.categories.includes('highlight')}
+				class:important={post.categories && post.categories.includes('highlight')}
 			>
 				<Cover {post}></Cover>
 				<div class="card-body">
 					<div class="flex gap-2 w-full flex-wrap">
-						<Tags tags={post.categories} />
+						<Tags tags={post.categories || []} />
 					</div>
 
-					<h2 class="card-title">{post.title}</h2>
+					<h2 class="card-title">{post.title || ""}</h2>
 					<p>{post.excerpt}</p>
 				</div>
 			</div>

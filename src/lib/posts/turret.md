@@ -6,6 +6,8 @@ categories:
   - "python"
   - "robotics"
   - "computer vision"
+  - "web"
+  - "svelte"
 cover: "/portfolio/assets/turret/turret.gltf"
 excerpt: Autonomous Nerf turret
 ---
