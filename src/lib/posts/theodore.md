@@ -7,7 +7,7 @@ categories:
   - "web"
   - "computer vision"
   - "highlight"
-cover: "/portfolio/assets/theodore/hero.png"
+cover: "/portfolio/assets/theodore/theo.gltf"
 excerpt: Autonomous nursery tree monitoring
 ---
 

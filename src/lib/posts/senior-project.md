@@ -14,7 +14,7 @@ I took a leading role in developing the overall concept and seeing through the e
 
 <embed class="w-full" src= "/portfolio/assets/senior-project/final-report.pdf" width="500" height="700">
 
-Here's the PCB we developed for the project:
+Here's the PCB I developed for the project:
 <embed class="w-full" src= "/portfolio/assets/senior-project/schem.pdf" width="500" height="500">
 
 <div class="flex flex-col overflow-hidden w-full">

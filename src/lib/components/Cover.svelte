@@ -1,10 +1,12 @@
 <script>
 	export let post;
+	export let controls = false;
+	export let exposure = 0.5;
 
-	let src = post.cover || "";
+	let src = post.cover || '';
 	let orientation = post.coverOrientation || '0deg -90deg -45deg';
 
-	function exposure(node, val) {
+	function setExposure(node, val) {
 		node.setAttribute('exposure', val);
 
 		return {
@@ -17,10 +19,11 @@
 
 {#if src.endsWith('gltf')}
 	<model-viewer
-		use:exposure={"0.5"}
+		use:setExposure={exposure}
 		{src}
-        {orientation}
-		touch-action="none"
+		{orientation}
+		camera-controls={controls ? true : null}
+		touch-action={'none'}
 		auto-rotate
 		auto-rotate-delay="500"
 		rotation-per-second="20deg"

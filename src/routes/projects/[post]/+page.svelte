@@ -24,7 +24,7 @@
 <article class="post prose w-full max-w-none">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<div class="w-full h-[40vh] mb-8 rounded-t-xl overflow-hidden">
-		<Cover post={data.meta}></Cover>
+		<Cover post={data.meta} controls></Cover>
 	</div>
 
 	{#if categories}
