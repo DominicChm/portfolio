@@ -62,13 +62,18 @@
 <style>
 	:global(body) {
 		min-height: 100%;
-		display: flex;
-		flex-direction: column;
-		background-color: oklch(var(--b2)) !important;
+		height: 100%;
 	}
 
 	:global(html) {
 		height: 100%;
 		min-height: 100%;
+	}
+
+	:global(#app) {
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: oklch(var(--b2)) !important;
 	}
 </style>

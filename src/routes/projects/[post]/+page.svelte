@@ -23,7 +23,7 @@
 
 <article class="post prose w-full max-w-none">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<div class="w-full h-[40vh] mb-8 rounded-t-xl overflow-hidden">
+	<div class="w-full h-[40vh] mb-8 rounded-[--rounded-box] overflow-hidden">
 		<Cover post={data.meta} controls></Cover>
 	</div>
 
@@ -53,7 +53,21 @@
 		{date}
 	</p>
 
-	<div class="prose max-w-full w-full relative">
+	<div id="post-container" class="prose max-w-full w-full relative">
 		<svelte:component this={PostContent} />
 	</div>
 </article>
+
+<style>
+	:global(#post-container img,video) {
+		border-radius: var(--rounded-box);
+	}
+
+	:global(#post-container .flex img:nth-of-type(1)) {
+		border-radius: var(--rounded-box) 0 0 var(--rounded-box);
+	}
+
+	:global(#post-container .flex img:nth-last-of-type(1)) {
+		border-radius: 0 var(--rounded-box) var(--rounded-box) 0;
+	}
+</style>

@@ -24,7 +24,6 @@ The launcher mechanism is completely custom-designed and uses two BLDC motors to
   touch-action="pan-y"
   orientation="0deg -90deg 0deg"
   class="w-full pb-[100%]"
-  exposure="0.1"
 />
 
 ## Final Build

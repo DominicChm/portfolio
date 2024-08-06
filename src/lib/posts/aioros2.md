@@ -7,14 +7,21 @@ categories:
   - "ros2"
   - "software"
   - "csc"
+  - "highlight"
 cover: "/portfolio/assets/aioros2/pyhero.png"
 excerpt: A Pythonic way to interact with ROS2
 ---
 
-If you've ever had to work with [Robot Operating System 2](https://www.ros.org/) (ROS2) in python, you'll know that getting it set up is the least of your issues. From using its own async model (rather than the standard `asyncio`) to relying entirely on callbacks, using it can be very painful for modern developers. That's why I developed `aioros2`, which leverages [asyncio](https://docs.python.org/3/library/asyncio.html) among other python features to wrap [rclpy](https://github.com/ros2/rclpy) in an intuitive, pythonic manner. It takes heavy inspiration from `python-socketio` and provides the tools to reduce boilerplate by more than half. It's still under development as part of my work at the CSC.
+If you've ever had to work with [Robot Operating System 2](https://www.ros.org/) (ROS2) in python, you'll know that getting it set up is the least of your issues. From using its own async model (rather than the standard `asyncio`) to relying entirely on callbacks, using it can be very painful for modern developers. That's why I developed `aioros2`, which leverages [asyncio](https://docs.python.org/3/library/asyncio.html) among other python features to wrap [rclpy](https://github.com/ros2/rclpy) in an intuitive, pythonic manner. 
+
+I took heavy inspiration from the decorator-centric API of `python-socketio` which allowed me to reduce boilerplate by more than half compared to native `rclpy`. Additionally, I added a dependency management system which enabled me to effectively automate the generation of client libraries which must be manually created and maintained in native `rclpy`.
+
+The result (in my opinion) is a massive improvement in developer ergonomics, project management, and integration speed when using `ROS2`. 
+`aioros2` still under heavy development and through documentation needs to be written, but feedback I've received from fellow developers is very positive.
+
 
 ## Comparison
-The following is a simple [action node and client](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html) which computes the fibonacci sequence, written in `rclpy`
+The following is a simple [action node and client](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html) (derived from the [official example](https://github.com/ros2/examples/tree/rolling/rclpy/actions)) which computes the fibonacci sequence, written in `rclpy`. 
 
 ```python
 ############### Server.py ###############
@@ -177,4 +184,4 @@ if __name__ == "__main__":
     main()
 ```
 
-Much clearer, right? By using `asyncio` with async generators, I'm was able to halve the lines of code and greatly increase readability. 
+By using `asyncio` with async generators, `aioros2` is able to halve lines of code and greatly increase readability. 
