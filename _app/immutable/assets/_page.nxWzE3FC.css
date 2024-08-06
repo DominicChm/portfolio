@@ -1,0 +1,1 @@
+#post-container img,video{border-radius:var(--rounded-box)}#post-container .flex img:nth-of-type(1){border-radius:var(--rounded-box) 0 0 var(--rounded-box)}#post-container .flex img:nth-last-of-type(1){border-radius:0 var(--rounded-box) var(--rounded-box) 0}
